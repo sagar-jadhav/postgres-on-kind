@@ -4,7 +4,7 @@ nodes:
 - role: control-plane
   # add a mount from /path/to/my/files on the host to /files on the node
   extraMounts:
-  - hostPath: /home
+  - hostPath: <MOUNT_PATH> # replace MOUNT_PATH with path of directory to be mount
     containerPath: /mnt/data
   extraPortMappings:
   - containerPort: 30000
